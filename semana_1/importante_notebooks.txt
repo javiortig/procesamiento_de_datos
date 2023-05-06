@@ -1,0 +1,14 @@
+Ejecutar jupiter desde el home o abriendo la 'app'
+
+Poner Esto al principio de cada notebook y ejecutarlo:
+
+```
+import findspark
+
+findspark.init()
+
+import pyspark
+
+sc = pyspark.SparkContext(appName="RDDBasics")
+```
+

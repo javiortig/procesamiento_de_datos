@@ -1,0 +1,30 @@
+Abrir CMD:
+1)Activar el Virtual enviroment de Anaconda para usar la version python 3.9 con:
+conda activate procesamiento_datos
+
+2)Abrir notebook:
+jupyter notebook
+
+
+3)Poner Esto al principio de cada notebook y ejecutarlo si es que no lo tiene ya:
+```
+import findspark
+
+findspark.init()
+
+import pyspark
+
+sc = pyspark.SparkContext(appName="RDDBasics")
+```
+
+4) Al terminar la sesión, desactivar el VEnv con:
+conda deactivate
+
+
+*) Extras:
+- Si algo no funciona, probar a ejecutar el notebook desde el home.
+- Asegurarnos que estamos usando versiones de python compatibles:
+```
+import sys
+print(sys.version)
+```
