@@ -2,30 +2,47 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.options import Options
+
 import time
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 import csv
 import json
+from itertools import zip_longest
 
-MAX_SCROLL_ITERATIONS = 50
-URL_TESTIMONIES = "https://www.everyonesinvited.uk/read"
+MAX_SCROLL_ITERATIONS = 200
 WAIT_TIME_SERVER_LOAD_DATA = 60
+URL_TESTIMONIES = "https://www.everyonesinvited.uk/read"
+RUN_HEADLESS = True
 
-driver = webdriver.Firefox()
+# Iniciamos el driver headless para ir más rapido
+driver_options = Options()
+if RUN_HEADLESS: 
+    driver_options.add_argument('-headless')
+
+driver = webdriver.Firefox(options=driver_options)
+
+#Entramos en la URL
 driver.get(URL_TESTIMONIES)
 
 # Scrollear para abajo
 for i in range(MAX_SCROLL_ITERATIONS):
     try:
+        # imprime una barra de progreso
+        percent = int((i / MAX_SCROLL_ITERATIONS) * 100)
+        print(f"[{'=' * percent}{' ' * (100 - percent)}] {percent}% complete", end='\r')
+
         # Encontramos el boton por sus clases y lo pulsamos
         button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "button.font-surt.bg-DemonicYellow.rounded-full")))
         button.click()
 
-        time.sleep(0.3)
+        time.sleep(2) if (i%6 == 0) else time.sleep(0.3)
+        
 
     except Exception as e:
         #Si no encontramos el boton, hemos terminado el scroll
         break
+
+print('\nExtracting data...')
 
 # Extraer los datos basados en un selector css
 wait = WebDriverWait(driver, 60)
@@ -42,11 +59,14 @@ data_date_location = [element.text for element in text_date_location]
 # Creamos un array de objetos y limpiamos los datos
 data = [
     {
-        "body": body.text, 
-        "date": (date_location.text.split(',')[0] + date_location.text.split(',')[1]) if  date_location.text != '' else '',
-        "location": date_location.text.split(',')[2].replace(" ", "", 1) if  date_location.text != '' else ''
+        "body": body.text , 
+        "date": (date_location.text.split(',')[0] + date_location.text.split(',')[1]) if  ((date_location != None) and (date_location.text != '') and (date_location.text != None)) else '',
+        "location": date_location.text.split(',')[2].replace(" ", "", 1) if  ((date_location != None) and (date_location.text != '') and (date_location.text != None)) else ''
     } 
-    for body, date_location in zip(text_body, text_date_location)]
+    for body, date_location in zip_longest(text_body, text_date_location)]
+
+
+print('Saving...')
 
 # Guardamos en el json
 with open("data.json", "w") as f:
@@ -63,4 +83,6 @@ with open('data.csv', mode='w', newline='') as file:
     for obj in data:
         writer.writerow(obj)
 
-#driver.close()
+driver.close()
+
+print('Job done!')
