@@ -3,42 +3,43 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 import csv
 import json
 
+MAX_SCROLL_ITERATIONS = 50
+URL_TESTIMONIES = "https://www.everyonesinvited.uk/read"
+WAIT_TIME_SERVER_LOAD_DATA = 60
 
 driver = webdriver.Firefox()
-driver.get("https://www.everyonesinvited.uk/read")
+driver.get(URL_TESTIMONIES)
 
 # Scrollear para abajo
-for i in range(10):
+for i in range(MAX_SCROLL_ITERATIONS):
     try:
-        # Find the button element by its classes
+        # Encontramos el boton por sus clases y lo pulsamos
         button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "button.font-surt.bg-DemonicYellow.rounded-full")))
-
-        # Click the button
         button.click()
 
-        # Wait for 8 seconds before clicking the button again
-        # time.sleep(2)
+        time.sleep(0.3)
 
-    except NoSuchElementException:
-        # If the button is not found, break out of the loop
+    except Exception as e:
+        #Si no encontramos el boton, hemos terminado el scroll
         break
 
 # Extraer los datos basados en un selector css
-wait = WebDriverWait(driver, 30)
+wait = WebDriverWait(driver, 60)
+wait2 = WebDriverWait(driver, 60)
 
 text_body = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "p.text-left.font-surt")))
-text_date_location = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "p.font-surt.text-xs")))
-
+text_date_location = wait2.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "p.font-surt.text-xs")))
 
 
 # Extraer cada texto
 data_body = [element.text for element in text_body]
 data_date_location = [element.text for element in text_date_location]
 
+# Creamos un array de objetos y limpiamos los datos
 data = [
     {
         "body": body.text, 
@@ -55,20 +56,11 @@ with open("data.json", "w") as f:
 with open('data.csv', mode='w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=data[0].keys())
 
-    #Escribimos el header
+    # Escribimos el header
     writer.writeheader()
 
-    # guardamos linea por linea
+    # Guardamos linea por linea
     for obj in data:
         writer.writerow(obj)
 
-driver.close()
-
-
-# Guardarlo en un csv
-# with open('data.csv', 'w', newline='', encoding='utf-8') as file:
-#     writer = csv.writer(file)
-#     writer.writerow(['Data'])
-#     for item in data_body:
-#         writer.writerow([item])
-
+#driver.close()

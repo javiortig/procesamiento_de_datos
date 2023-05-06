@@ -1,0 +1,125 @@
+1683377858836	geckodriver	INFO	Listening on 127.0.0.1:43489
+1683377858904	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "41091" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2p1oGd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.446548) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683377859417	Marionette	INFO	Marionette enabled
+1683377859420	Marionette	INFO	Listening on port 35021
+WebDriver BiDi listening on ws://127.0.0.1:41091
+Read port: 35021
+1683377859626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2p1oGd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:41091/devtools/browser/dc8c30d4-eae8-45e3-8c5a-e4eb0ae06cc1
+1683377990072	geckodriver	INFO	Listening on 127.0.0.1:36431
+1683377990123	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "57461" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilechoXR2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.346679) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683377990506	Marionette	INFO	Marionette enabled
+1683377990509	Marionette	INFO	Listening on port 33957
+Read port: 33957
+WebDriver BiDi listening on ws://127.0.0.1:57461
+1683377990610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilechoXR2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57461/devtools/browser/8cb73535-5398-4a2c-86a8-3cacf21b0882
+1683378121365	geckodriver	INFO	Listening on 127.0.0.1:40729
+1683378121416	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "34777" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileG8MVJk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.355891) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683378121819	Marionette	INFO	Marionette enabled
+1683378121822	Marionette	INFO	Listening on port 40869
+WebDriver BiDi listening on ws://127.0.0.1:34777
+Read port: 40869
+1683378122078	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileG8MVJk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:34777/devtools/browser/67bbc837-0db7-47d2-9d0f-f8b23a87d0e7
+1683378166576	Marionette	INFO	Stopped listening on port 40869
+1683378229805	Marionette	INFO	Stopped listening on port 35021
+1683378233769	Marionette	INFO	Stopped listening on port 33957
+1683378246850	geckodriver	INFO	Listening on 127.0.0.1:33801
+1683378246900	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "49149" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile41D56r"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.349439) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683378247303	Marionette	INFO	Marionette enabled
+1683378247306	Marionette	INFO	Listening on port 45441
+WebDriver BiDi listening on ws://127.0.0.1:49149
+Read port: 45441
+1683378247567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile41D56r/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49149/devtools/browser/72e4c238-9909-4e4b-ae16-cb24991c9146
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=21.9674) Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=21.9231) Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=17.741) Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=21.9458) Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=23.0374) Exiting due to channel error.
+1683378287526	geckodriver	INFO	Listening on 127.0.0.1:49855
+1683378287577	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "42693" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7AdZuk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.330282) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683378287954	Marionette	INFO	Marionette enabled
+1683378287957	Marionette	INFO	Listening on port 43107
+Read port: 43107
+WebDriver BiDi listening on ws://127.0.0.1:42693
+1683378288063	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7AdZuk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42693/devtools/browser/da3fb02c-b689-4b41-a845-c60b9da1f937
+1683378314343	Marionette	INFO	Stopped listening on port 43107
+1683378390230	geckodriver	INFO	Listening on 127.0.0.1:48187
+1683378390281	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "35215" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRk9CLO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.334382) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683378390660	Marionette	INFO	Marionette enabled
+1683378390663	Marionette	INFO	Listening on port 32983
+Read port: 32983
+WebDriver BiDi listening on ws://127.0.0.1:35215
+1683378390766	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRk9CLO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:35215/devtools/browser/5e200734-85b8-43e6-ac6c-caebef887f58
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=4.32403) Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=4.39703) 1683378409339	geckodriver	INFO	Listening on 127.0.0.1:55941
+1683378409391	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "47485" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4N5VJ8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.331776) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683378409768	Marionette	INFO	Marionette enabled
+1683378409771	Marionette	INFO	Listening on port 34845
+Read port: 34845
+WebDriver BiDi listening on ws://127.0.0.1:47485
+1683378409874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4N5VJ8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:47485/devtools/browser/3c6bc333-a35d-4bfd-9aeb-db41bfdf1cf4
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1683378478516	Marionette	INFO	Stopped listening on port 34845
+1683378643857	geckodriver	INFO	Listening on 127.0.0.1:59633
+1683378643907	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "57149" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewdUD5n"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection. (t=0.3357) [GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1683378644297	Marionette	INFO	Marionette enabled
+1683378644300	Marionette	INFO	Listening on port 45935
+Read port: 45935
+WebDriver BiDi listening on ws://127.0.0.1:57149
+1683378644402	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewdUD5n/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57149/devtools/browser/049dcd5b-bc7c-4ae0-9e5e-91311e979c6f
+1683378823731	Marionette	INFO	Stopped listening on port 45935
